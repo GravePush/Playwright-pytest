@@ -1,9 +1,6 @@
 stages:
   - test
 
-default:
-  tags:
-    - localshell
 
 tests:
   stage: test
@@ -13,3 +10,5 @@ tests:
     - pip install -r requirements.txt
   script:
     - pytest
+  tags:
+    - localshell
