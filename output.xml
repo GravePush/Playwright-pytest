@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.0 on win32)" generated="2025-11-22T17:04:04.657082" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Tests" source="D:\PythonProjects\AQA\PlayWright\playwright-study\robot-framework\tests\login_tests.robot">
+<kw name="Open App" owner="BaseKeywords" type="SETUP">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Open app...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-22T17:04:04.687038" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-11-22T17:04:04.687038" elapsed="0.000000"/>
+</kw>
+<test id="s1-t1" name="Valid User Login" line="9">
+<kw name="Login As Valid User" owner="LoginPage">
+<kw name="Open Login Page" owner="LoginPage">
+<kw name="Open Page" owner="BaseKeywords">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Open ${page_name}...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-22T17:04:04.687038" elapsed="0.000000"/>
+</kw>
+<arg>${PAGE_NAME}</arg>
+<status status="PASS" start="2025-11-22T17:04:04.687038" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-11-22T17:04:04.687038" elapsed="0.000000"/>
+</kw>
+<kw name="Enter Username" owner="LoginPage">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Enter username: ${USERNAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-22T17:04:04.687038" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-11-22T17:04:04.687038" elapsed="0.000000"/>
+</kw>
+<kw name="Enter Password" owner="LoginPage">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Enter password: ${PASSWORD}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-22T17:04:04.687038" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-11-22T17:04:04.687038" elapsed="0.000000"/>
+</kw>
+<kw name="Click Submit" owner="LoginPage">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Click on submit...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-22T17:04:04.692048" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-11-22T17:04:04.692048" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-11-22T17:04:04.687038" elapsed="0.005010"/>
+</kw>
+<status status="PASS" start="2025-11-22T17:04:04.687038" elapsed="0.005010"/>
+</test>
+<kw name="Close App" owner="BaseKeywords" type="TEARDOWN">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Close app...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-22T17:04:04.692048" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-11-22T17:04:04.692048" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-11-22T17:04:04.657082" elapsed="0.034966"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Tests" id="s1" pass="1" fail="0" skip="0">Login Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
