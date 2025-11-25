@@ -5,14 +5,23 @@ variables:
 
 stages:
   - test
+  - setup
 
-before_script:
-  - python --version ; pip --version  # For debugging
-  - pip install virtualenv
-  - virtualenv venv
-  - source venv/bin/activate
-  - pip install --upgrade pip
-  - pip install -r requirements.txt
+setup_job:
+  stage: setup
+  tags:
+    - shell  # твой локальный runner
+  script:
+    - python --version
+    - pip --version
+    - pip install virtualenv
+    - python -m virtualenv venv
+    - call venv\Scripts\activate.bat
+    - python -m pip install --upgrade pip
+    - pip install -r requirements.txt
+  artifacts:
+    paths:
+      - venv/  # сохраняем виртуальное окружение для последующих джоб
 
 
 
