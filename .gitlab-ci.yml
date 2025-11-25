@@ -1,6 +1,10 @@
 stages:
   - test
 
+default:
+  tags:
+    - localshell
+
 tests:
   stage: test
   image: python:3.12
