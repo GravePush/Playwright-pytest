@@ -1,24 +1,23 @@
-image: python:latest
+image: python:3.12
 
 variables:
   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
 
 stages:
   - test
-  -
+
 before_script:
   - python --version ; pip --version  # For debugging
   - pip install virtualenv
   - virtualenv venv
   - source venv/bin/activate
+  - pip install --upgrade pip
+  - pip install -r requirements.txt
 
 
 
 tests:
   stage: test
-  before_script:
-    - pip install --upgrade pip
-    - pip install -r requirements.txt
   script:
     - pytest
   tags:
