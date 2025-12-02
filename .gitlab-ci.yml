@@ -2,26 +2,39 @@ default:
   tags:
     - shell
 
-
 stages:
   - build
   - test
-  - deploy
 
 build-job:
   stage: build
   script:
-    - pip install virtualenv
-    - python -m virtualenv venv
-    - call venv\Scripts\activate.bat
+    # Проверяем версии
+    - python --version
+    - python -m pip --version
+
+    # Обновляем pip
     - python -m pip install --upgrade pip
+
+    # Ставим виртуальное окружение
+    - python -m pip install virtualenv
+    - python -m virtualenv venv
+
+    # Активируем виртуальное окружение (PowerShell)
+    - .\venv\Scripts\Activate.ps1
+
+    # Устанавливаем зависимости
     - pip install -r requirements.txt
+
   artifacts:
     paths:
       - venv/
     expire_in: 1 hour
 
-
-pytest:
+pytest-job:
   stage: test
-  script: pytest
+  dependencies:
+    - build-job
+  script:
+    - .\venv\Scripts\Activate.ps1
+    - pytest
