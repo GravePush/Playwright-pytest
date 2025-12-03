@@ -5,4 +5,5 @@ default:
 build-job:
   stage: build
   script:
-    - winget show
+    - python --version
+    - pip --version
