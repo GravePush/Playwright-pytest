@@ -2,6 +2,11 @@ default:
   tags:
     - shellrunner
 
+
+stages:
+  - build
+  - test
+
 build-job:
   stage: build
   script:
@@ -9,3 +14,8 @@ build-job:
     - pip --version
     - pip install -r requirements.txt
     - pytest --version
+
+pytest-job:
+  stage: test
+  script:
+    - pytest -v -s
