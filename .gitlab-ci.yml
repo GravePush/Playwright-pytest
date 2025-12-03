@@ -1,6 +1,4 @@
-default:
-  tags:
-    - shell
+
 
 build-job:
   stage: build
