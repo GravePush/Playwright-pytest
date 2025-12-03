@@ -6,6 +6,7 @@ default:
 stages:
   - build
   - test
+  - deploy
 
 build-job:
   stage: build
@@ -27,3 +28,14 @@ pytest-job:
     paths:
       - allure-reports
     expire_in: 1 week
+
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - cp -r allure-reports/* public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
