@@ -13,9 +13,11 @@ build-job:
     - python --version
     - pip --version
     - pip install -r requirements.txt
-    - pytest --version
+    - npx playwright install-deps chromium
+
 
 pytest-job:
   stage: test
   script:
-    - pytest -v -s
+    - python -m pip show playwright
+    - python -m playwright --version

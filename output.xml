@@ -1,128 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.0 on win32)" generated="2025-12-02T16:46:13.322135" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.12.0 on win32)" generated="2025-12-03T16:40:32.866663" rpa="false" schemaversion="5">
 <suite id="s1" name="Playwright-Study" source="D:\PythonProjects\AQA\PlayWright\playwright-study">
 <suite id="s1-s1" name="Robot-Framework" source="D:\PythonProjects\AQA\PlayWright\playwright-study\robot-framework">
 <suite id="s1-s1-s1" name="TestExample" source="D:\PythonProjects\AQA\PlayWright\playwright-study\robot-framework\TestExample.robot">
 <test id="s1-s1-s1-t1" name="Print Numbers" line="63">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:13.369003" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
 <kw name="Catenate" owner="BuiltIn">
-<msg time="2025-12-02T16:46:13.374047" level="INFO">${text} = 10 25 7 3 40</msg>
+<msg time="2025-12-03T16:40:32.929208" level="INFO">${text} = 10 25 7 3 40</msg>
 <var>${text}</var>
 <arg>@{NUMBERS}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.369003" elapsed="0.005044"/>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<msg time="2025-12-02T16:46:13.374047" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<msg time="2025-12-03T16:40:32.929208" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.369003" elapsed="0.005044"/>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </test>
 <test id="s1-s1-s1-t2" name="Check Max Value From List Is 40" line="67">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
 <kw name="Get Max Value From List">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-12-02T16:46:13.374047" level="INFO">${max_value} = 40</msg>
+<msg time="2025-12-03T16:40:32.929208" level="INFO">${max_value} = 40</msg>
 <var>${max_value}</var>
 <arg>max([int(x) for x in ${list}])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </kw>
 <return>
 <value>${max_value}</value>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </return>
-<msg time="2025-12-02T16:46:13.374047" level="INFO">${max_value} = 40</msg>
+<msg time="2025-12-03T16:40:32.929208" level="INFO">${max_value} = 40</msg>
 <var>${max_value}</var>
 <arg>@{NUMBERS}</arg>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
-<msg time="2025-12-02T16:46:13.374047" level="INFO">Argument types are:
+<msg time="2025-12-03T16:40:32.929208" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${max_value}</arg>
 <arg>40</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<msg time="2025-12-02T16:46:13.374047" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<msg time="2025-12-03T16:40:32.929208" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.929208" elapsed="0.000000"/>
 </test>
 <test id="s1-s1-s1-t3" name="Check Lists Combined" line="70">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
 <kw name="Create List" owner="BuiltIn">
-<msg time="2025-12-02T16:46:13.374047" level="INFO">${list1} = ['a', 'b', 'c']</msg>
+<msg time="2025-12-03T16:40:32.944797" level="INFO">${list1} = ['a', 'b', 'c']</msg>
 <var>${list1}</var>
 <arg>@{A}</arg>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <kw name="Create List" owner="BuiltIn">
-<msg time="2025-12-02T16:46:13.374047" level="INFO">${list2} = ['1', '2', '3']</msg>
+<msg time="2025-12-03T16:40:32.944797" level="INFO">${list2} = ['1', '2', '3']</msg>
 <var>${list2}</var>
 <arg>@{B}</arg>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <kw name="Combine Two Lists">
 <kw name="Combine Lists" owner="Collections">
-<msg time="2025-12-02T16:46:13.374047" level="INFO">${combine_lists} = ['a', 'b', 'c', '1', '2', '3']</msg>
+<msg time="2025-12-03T16:40:32.944797" level="INFO">${combine_lists} = ['a', 'b', 'c', '1', '2', '3']</msg>
 <var>${combine_lists}</var>
 <arg>${list_1}</arg>
 <arg>${list_2}</arg>
 <doc>Combines the given ``lists`` together and returns the result.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <return>
 <value>${combine_lists}</value>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </return>
-<msg time="2025-12-02T16:46:13.374047" level="INFO">${combined_list} = ['a', 'b', 'c', '1', '2', '3']</msg>
+<msg time="2025-12-03T16:40:32.944797" level="INFO">${combined_list} = ['a', 'b', 'c', '1', '2', '3']</msg>
 <var>${combined_list}</var>
 <arg>${list1}</arg>
 <arg>${list2}</arg>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <kw name="Length Should Be" owner="BuiltIn">
-<msg time="2025-12-02T16:46:13.374047" level="INFO">Length is 6.</msg>
+<msg time="2025-12-03T16:40:32.944797" level="INFO">Length is 6.</msg>
 <arg>${combined_list}</arg>
 <arg>6</arg>
 <doc>Verifies that the length of the given item is correct.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<msg time="2025-12-02T16:46:13.374047" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<msg time="2025-12-03T16:40:32.944797" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </test>
 <test id="s1-s1-s1-t4" name="Check Valid User Data" line="76">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.015724"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
 <kw name="Check User Data">
@@ -130,140 +130,140 @@
 <arg>${user_data}</arg>
 <arg>role</arg>
 <doc>Fails if ``key`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.390867" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${user_data["role"]}</arg>
 <arg>admin</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.390867" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <arg>&amp;{USER}</arg>
-<status status="PASS" start="2025-12-02T16:46:13.390319" elapsed="0.000548"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <kw name="Print Name">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-12-02T16:46:13.392918" level="INFO">${name} = Alice</msg>
+<msg time="2025-12-03T16:40:32.944797" level="INFO">${name} = Alice</msg>
 <var>${name}</var>
 <arg>${user_data["name"]}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.390867" elapsed="0.002051"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <kw name="Dictionary Should Contain Key" owner="Collections">
 <arg>${user_data}</arg>
 <arg>name</arg>
 <doc>Fails if ``key`` is not found from ``dictionary``.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.392918" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${name}</arg>
 <arg>Alice</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.392918" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.392918" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <arg>&amp;{USER}</arg>
-<status status="PASS" start="2025-12-02T16:46:13.390867" elapsed="0.002051"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.390319" elapsed="0.002599"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<msg time="2025-12-02T16:46:13.392918" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
-<status status="PASS" start="2025-12-02T16:46:13.392918" elapsed="0.000000"/>
+<msg time="2025-12-03T16:40:32.944797" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.374047" elapsed="0.018871"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.000000"/>
 </test>
 <test id="s1-s1-s1-t5" name="Try Update Item" line="80">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:13.392918" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.960456" elapsed="0.000000"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
 <kw name="Update Item">
 <kw name="Set To Dictionary" owner="Collections">
-<msg time="2025-12-02T16:46:13.392918" level="INFO">${updated_item} = {'id': '123', 'price': '75'}</msg>
+<msg time="2025-12-03T16:40:32.960456" level="INFO">${updated_item} = {'id': '123', 'price': '75'}</msg>
 <var>${updated_item}</var>
 <arg>${item}</arg>
 <arg>price</arg>
 <arg>75</arg>
 <doc>Adds the given ``key_value_pairs`` and/or ``items`` to the ``dictionary``.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.392918" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.960456" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
 <arg>${item["price"]}</arg>
 <arg>75</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.392918" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.960456" elapsed="0.000000"/>
 </kw>
 <arg>&amp;{ITEM}</arg>
-<status status="PASS" start="2025-12-02T16:46:13.392918" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.960456" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.392918" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.960456" elapsed="0.000000"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<msg time="2025-12-02T16:46:13.401460" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
-<status status="PASS" start="2025-12-02T16:46:13.392918" elapsed="0.008542"/>
+<msg time="2025-12-03T16:40:32.960456" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
+<status status="PASS" start="2025-12-03T16:40:32.960456" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.392918" elapsed="0.008542"/>
+<status status="PASS" start="2025-12-03T16:40:32.944797" elapsed="0.015659"/>
 </test>
 <test id="s1-s1-s1-t6" name="Say Hello" line="83">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.960456" elapsed="0.000000"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
 <kw name="Hello">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Hello, ${name}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
 <arg>Slepen</arg>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.960456" elapsed="0.006542"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<msg time="2025-12-02T16:46:13.401460" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<msg time="2025-12-03T16:40:32.966998" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.960456" elapsed="0.006542"/>
 </test>
 <test id="s1-s1-s1-t7" name="Get List Length" line="86">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
 <kw name="Show List Length">
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2025-12-02T16:46:13.401460" level="INFO">Length is 5.</msg>
-<msg time="2025-12-02T16:46:13.401460" level="INFO">${list_length} = 5</msg>
+<msg time="2025-12-03T16:40:32.966998" level="INFO">Length is 5.</msg>
+<msg time="2025-12-03T16:40:32.966998" level="INFO">${list_length} = 5</msg>
 <var>${list_length}</var>
 <arg>${list}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${list_length}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
 <arg>@{NUMBERS}</arg>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<msg time="2025-12-02T16:46:13.401460" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<msg time="2025-12-03T16:40:32.966998" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </test>
 <test id="s1-s1-s1-t8" name="Should Print When Number Greater Then 10" line="89">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
 <kw name="Print Message If Number Greater 10">
@@ -271,7 +271,7 @@
 <kw name="Log To Console" owner="BuiltIn">
 <arg>OK</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
 <arg>${number} &gt;= 10</arg>
 <arg>Log To Console</arg>
@@ -280,70 +280,70 @@
 <arg>Log To Console</arg>
 <arg>Too small</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
 <arg>${VALUE}</arg>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<msg time="2025-12-02T16:46:13.401460" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<msg time="2025-12-03T16:40:32.966998" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.401460" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </test>
 <test id="s1-s1-s1-t9" name="Should Repeat 3 Times" line="92">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:13.417891" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
 <kw name="Repeat Keyword" owner="BuiltIn">
-<msg time="2025-12-02T16:46:13.417891" level="INFO">Repeating keyword, round 1/3.</msg>
+<msg time="2025-12-03T16:40:32.966998" level="INFO">Repeating keyword, round 1/3.</msg>
 <kw name="Repeat Message">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.417891" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
 <arg>${VALUE}</arg>
-<status status="PASS" start="2025-12-02T16:46:13.417891" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
-<msg time="2025-12-02T16:46:13.417891" level="INFO">Repeating keyword, round 2/3.</msg>
+<msg time="2025-12-03T16:40:32.966998" level="INFO">Repeating keyword, round 2/3.</msg>
 <kw name="Repeat Message">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.417891" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
 <arg>${VALUE}</arg>
-<status status="PASS" start="2025-12-02T16:46:13.417891" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.000000"/>
 </kw>
-<msg time="2025-12-02T16:46:13.417891" level="INFO">Repeating keyword, round 3/3.</msg>
+<msg time="2025-12-03T16:40:32.966998" level="INFO">Repeating keyword, round 3/3.</msg>
 <kw name="Repeat Message">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.417891" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.982668" elapsed="0.000000"/>
 </kw>
 <arg>${VALUE}</arg>
-<status status="PASS" start="2025-12-02T16:46:13.417891" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.015670"/>
 </kw>
 <arg>3</arg>
 <arg>Repeat Message</arg>
 <arg>${VALUE}</arg>
 <doc>Executes the specified keyword multiple times.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.417891" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.015670"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.417891" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.015670"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<msg time="2025-12-02T16:46:13.417891" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
-<status status="PASS" start="2025-12-02T16:46:13.417891" elapsed="0.000000"/>
+<msg time="2025-12-03T16:40:32.982668" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
+<status status="PASS" start="2025-12-03T16:40:32.982668" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.417891" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.966998" elapsed="0.015670"/>
 </test>
-<status status="PASS" start="2025-12-02T16:46:13.337760" elapsed="0.080131"/>
+<status status="PASS" start="2025-12-03T16:40:32.882331" elapsed="0.100337"/>
 </suite>
 <suite id="s1-s1-s2" name="Tests" source="D:\PythonProjects\AQA\PlayWright\playwright-study\robot-framework\tests">
 <suite id="s1-s1-s2-s1" name="Login Tests" source="D:\PythonProjects\AQA\PlayWright\playwright-study\robot-framework\tests\login_tests.robot">
@@ -351,233 +351,270 @@
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Open app...</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-02T16:46:13.433525" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:13.433525" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
 </kw>
-<test id="s1-s1-s2-s1-t1" name="Valid User Login" line="10">
+<test id="s1-s1-s2-s1-t1" name="Valid User Login" line="9">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<kw name="test_valid_user_login">
-<msg time="2025-12-02T16:46:13.433525" level="FAIL">No keyword with name 'test_valid_user_login' found.</msg>
-<status status="FAIL" start="2025-12-02T16:46:13.433525" elapsed="0.000000">No keyword with name 'test_valid_user_login' found.</status>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2025-12-02T16:46:13.433525" elapsed="1.058451">No keyword with name 'test_valid_user_login' found.</status>
+<kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
+<kw name="Login As Valid User" owner="LoginPage">
+<kw name="Open Login Page" owner="LoginPage">
+<kw name="Open Page" owner="BaseKeywords">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Open ${page_name}...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
+</kw>
+<arg>${PAGE_NAME}</arg>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
+</kw>
+<kw name="Enter Username" owner="LoginPage">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Enter username: ${USERNAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
+</kw>
+<kw name="Enter Password" owner="LoginPage">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Enter password: ${PASSWORD}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
+</kw>
+<kw name="Click Submit" owner="LoginPage">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Click on submit...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<msg time="2025-12-02T16:46:14.491976" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
-<status status="PASS" start="2025-12-02T16:46:14.491976" elapsed="0.000000"/>
+<msg time="2025-12-03T16:40:32.998259" level="INFO">Error taking screenshot: 'RobotItem' object has no attribute 'funcargs'</msg>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2025-12-02T16:46:13.433525" elapsed="1.058451">Setup failed:
-No keyword with name 'test_valid_user_login' found.</status>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
 </test>
 <kw name="Close App" owner="BaseKeywords" type="TEARDOWN">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Close app...</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-12-02T16:46:14.507765" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-12-02T16:46:14.507765" elapsed="0.000000"/>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2025-12-02T16:46:13.417891" elapsed="1.089874"/>
+<status status="PASS" start="2025-12-03T16:40:32.982668" elapsed="0.015591"/>
 </suite>
-<status status="FAIL" start="2025-12-02T16:46:13.417891" elapsed="1.089874"/>
+<status status="PASS" start="2025-12-03T16:40:32.982668" elapsed="0.015591"/>
 </suite>
-<status status="FAIL" start="2025-12-02T16:46:13.337760" elapsed="1.170005"/>
+<status status="PASS" start="2025-12-03T16:40:32.882331" elapsed="0.115928"/>
 </suite>
 <suite id="s1-s2" name="Tests" source="D:\PythonProjects\AQA\PlayWright\playwright-study\tests">
 <suite id="s1-s2-s1" name="E2E" source="D:\PythonProjects\AQA\PlayWright\playwright-study\tests\e2e">
 <suite id="s1-s2-s1-s1" name="Test Successful Purchase" source="D:\PythonProjects\AQA\PlayWright\playwright-study\tests\e2e\test_successful_purchase.py">
 <test id="s1-s2-s1-s1-t1" name="test_user_can_purchase_item[chromium-login0]">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:14.523275" elapsed="21.787486"/>
+<status status="PASS" start="2025-12-03T16:40:33.013917" elapsed="20.126154"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
-<status status="PASS" start="2025-12-02T16:46:36.311760" elapsed="0.745316"/>
+<status status="PASS" start="2025-12-03T16:40:53.140071" elapsed="0.806707"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2025-12-02T16:46:37.057587" elapsed="0.413380"/>
+<status status="PASS" start="2025-12-03T16:40:53.947881" elapsed="0.436240"/>
 </kw>
 <tag>allure_label</tag>
 <tag>e2e</tag>
 <tag>parametrize</tag>
 <tag>smoke</tag>
-<status status="PASS" start="2025-12-02T16:46:14.523275" elapsed="22.947692"/>
+<status status="PASS" start="2025-12-03T16:40:33.013917" elapsed="21.370204"/>
 </test>
-<status status="PASS" start="2025-12-02T16:46:14.523275" elapsed="22.947692"/>
+<status status="PASS" start="2025-12-03T16:40:33.013917" elapsed="21.370204"/>
 </suite>
-<status status="PASS" start="2025-12-02T16:46:14.507765" elapsed="22.963202"/>
+<status status="PASS" start="2025-12-03T16:40:33.013917" elapsed="21.370204"/>
 </suite>
 <suite id="s1-s2-s2" name="Ui" source="D:\PythonProjects\AQA\PlayWright\playwright-study\tests\ui">
 <suite id="s1-s2-s2-s1" name="Test Cart Page" source="D:\PythonProjects\AQA\PlayWright\playwright-study\tests\ui\test_cart_page.py">
 <test id="s1-s2-s2-s1-t1" name="test_remove_item_from_cart[auth_state0-chromium]">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:37.486641" elapsed="1.971994"/>
+<status status="PASS" start="2025-12-03T16:40:54.384121" elapsed="1.897247"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
-<status status="PASS" start="2025-12-02T16:46:39.458635" elapsed="0.198515"/>
+<status status="PASS" start="2025-12-03T16:40:56.281368" elapsed="0.170556"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2025-12-02T16:46:39.659126" elapsed="0.009047"/>
+<status status="PASS" start="2025-12-03T16:40:56.452923" elapsed="0.008481"/>
 </kw>
 <tag>allure_label</tag>
-<status status="PASS" start="2025-12-02T16:46:37.486641" elapsed="2.181532"/>
+<status status="PASS" start="2025-12-03T16:40:54.384121" elapsed="2.077283"/>
 </test>
-<status status="PASS" start="2025-12-02T16:46:37.470967" elapsed="2.303985"/>
+<status status="PASS" start="2025-12-03T16:40:54.384121" elapsed="2.077283"/>
 </suite>
 <suite id="s1-s2-s2-s2" name="Test Checkout Pages" source="D:\PythonProjects\AQA\PlayWright\playwright-study\tests\ui\test_checkout_pages.py">
 <test id="s1-s2-s2-s2-t1" name="test_valid_input_on_checkout_step_one_page[auth_state0-chromium-John-Hill-123456]">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:39.774952" elapsed="1.146481"/>
+<status status="PASS" start="2025-12-03T16:40:56.470413" elapsed="1.102808"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
-<status status="PASS" start="2025-12-02T16:46:40.922438" elapsed="0.304049"/>
+<status status="PASS" start="2025-12-03T16:40:57.573221" elapsed="0.485240"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2025-12-02T16:46:41.227514" elapsed="0.015501"/>
+<status status="PASS" start="2025-12-03T16:40:58.058461" elapsed="0.009820"/>
 </kw>
 <tag>allure_label</tag>
 <tag>parametrize</tag>
-<status status="PASS" start="2025-12-02T16:46:39.774952" elapsed="1.468063"/>
+<status status="PASS" start="2025-12-03T16:40:56.461404" elapsed="1.606877"/>
 </test>
 <test id="s1-s2-s2-s2-t2" name="test_check_correct_info_checkout_two_page[auth_state0-chromium]">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:41.243015" elapsed="1.167336"/>
+<status status="PASS" start="2025-12-03T16:40:58.068281" elapsed="1.137582"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
-<status status="PASS" start="2025-12-02T16:46:42.411349" elapsed="0.377043"/>
+<status status="PASS" start="2025-12-03T16:40:59.205863" elapsed="0.336047"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2025-12-02T16:46:42.788392" elapsed="0.009149"/>
+<status status="PASS" start="2025-12-03T16:40:59.542919" elapsed="0.008516"/>
 </kw>
 <tag>allure_label</tag>
-<status status="PASS" start="2025-12-02T16:46:41.243015" elapsed="1.554526"/>
+<status status="PASS" start="2025-12-03T16:40:58.068281" elapsed="1.483154"/>
 </test>
 <test id="s1-s2-s2-s2-t3" name="test_checkout_complete_page[auth_state0-chromium]">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:42.797541" elapsed="1.189557"/>
+<status status="PASS" start="2025-12-03T16:40:59.551435" elapsed="1.133593"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
-<status status="PASS" start="2025-12-02T16:46:43.987098" elapsed="0.474126"/>
+<status status="PASS" start="2025-12-03T16:41:00.686026" elapsed="0.431635"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2025-12-02T16:46:44.461224" elapsed="0.012929"/>
+<status status="PASS" start="2025-12-03T16:41:01.117661" elapsed="0.008616"/>
 </kw>
 <tag>allure_label</tag>
-<status status="PASS" start="2025-12-02T16:46:42.797541" elapsed="1.676612"/>
+<status status="PASS" start="2025-12-03T16:40:59.551435" elapsed="1.574842"/>
 </test>
-<status status="PASS" start="2025-12-02T16:46:39.774952" elapsed="4.699201"/>
+<status status="PASS" start="2025-12-03T16:40:56.461404" elapsed="4.664873"/>
 </suite>
 <suite id="s1-s2-s2-s3" name="Test Login Page" source="D:\PythonProjects\AQA\PlayWright\playwright-study\tests\ui\test_login_page.py">
 <test id="s1-s2-s2-s3-t1" name="test_valid_user_login[chromium-login0]">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:44.474153" elapsed="0.858279"/>
+<status status="PASS" start="2025-12-03T16:41:01.141908" elapsed="0.753556"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
-<status status="PASS" start="2025-12-02T16:46:45.332432" elapsed="0.020689"/>
+<status status="PASS" start="2025-12-03T16:41:01.896464" elapsed="0.038106"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2025-12-02T16:46:45.353121" elapsed="0.157912"/>
+<status status="PASS" start="2025-12-03T16:41:01.935597" elapsed="0.166052"/>
 </kw>
 <tag>allure_label</tag>
 <tag>parametrize</tag>
-<status status="PASS" start="2025-12-02T16:46:44.474153" elapsed="1.036880"/>
+<status status="PASS" start="2025-12-03T16:41:01.141908" elapsed="0.959741"/>
 </test>
 <test id="s1-s2-s2-s3-t2" name="test_invalid_user_login[chromium-invalid-invalid-Epic sadface: Username and password do not match any user in this service]">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:45.526656" elapsed="0.078984"/>
+<status status="PASS" start="2025-12-03T16:41:02.117276" elapsed="0.097407"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
-<status status="PASS" start="2025-12-02T16:46:45.605640" elapsed="0.641796"/>
+<status status="PASS" start="2025-12-03T16:41:02.214683" elapsed="0.665579"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2025-12-02T16:46:46.256593" elapsed="0.110680"/>
+<status status="PASS" start="2025-12-03T16:41:02.881259" elapsed="0.123153"/>
 </kw>
 <tag>allure_label</tag>
 <tag>parametrize</tag>
-<status status="PASS" start="2025-12-02T16:46:45.526656" elapsed="0.840617"/>
+<status status="PASS" start="2025-12-03T16:41:02.117276" elapsed="0.887136"/>
 </test>
 <test id="s1-s2-s2-s3-t3" name="test_invalid_user_login[chromium--invalid-Epic sadface: Username is required]">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:46.367273" elapsed="0.090581"/>
+<status status="PASS" start="2025-12-03T16:41:03.020038" elapsed="0.095417"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
-<status status="PASS" start="2025-12-02T16:46:46.458853" elapsed="0.692214"/>
+<status status="PASS" start="2025-12-03T16:41:03.115455" elapsed="0.658684"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2025-12-02T16:46:47.151067" elapsed="0.129820"/>
+<status status="PASS" start="2025-12-03T16:41:03.774139" elapsed="0.118018"/>
 </kw>
 <tag>allure_label</tag>
 <tag>parametrize</tag>
-<status status="PASS" start="2025-12-02T16:46:46.367273" elapsed="0.913614"/>
+<status status="PASS" start="2025-12-03T16:41:03.020038" elapsed="0.872119"/>
 </test>
 <test id="s1-s2-s2-s3-t4" name="test_invalid_user_login[chromium-invalid--Epic sadface: Password is required]">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:47.293501" elapsed="0.088790"/>
+<status status="PASS" start="2025-12-03T16:41:03.894160" elapsed="0.082001"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
-<status status="PASS" start="2025-12-02T16:46:47.382291" elapsed="0.672660"/>
+<status status="PASS" start="2025-12-03T16:41:03.976161" elapsed="0.631458"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2025-12-02T16:46:48.054951" elapsed="0.120228"/>
+<status status="PASS" start="2025-12-03T16:41:04.608647" elapsed="0.105135"/>
 </kw>
 <tag>allure_label</tag>
 <tag>parametrize</tag>
-<status status="PASS" start="2025-12-02T16:46:47.293501" elapsed="0.881678"/>
+<status status="PASS" start="2025-12-03T16:41:03.893159" elapsed="0.820623"/>
 </test>
 <test id="s1-s2-s2-s3-t5" name="test_invalid_user_login[chromium-locked_out_user-secret_sauce-Epic sadface: Sorry, this user has been locked out.]">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:48.175179" elapsed="0.083648"/>
+<status status="PASS" start="2025-12-03T16:41:04.713782" elapsed="0.093298"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
-<status status="PASS" start="2025-12-02T16:46:48.258827" elapsed="0.661761"/>
+<status status="PASS" start="2025-12-03T16:41:04.807080" elapsed="0.659814"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2025-12-02T16:46:48.920588" elapsed="0.133243"/>
+<status status="PASS" start="2025-12-03T16:41:05.466894" elapsed="0.125122"/>
 </kw>
 <tag>allure_label</tag>
 <tag>parametrize</tag>
-<status status="PASS" start="2025-12-02T16:46:48.175179" elapsed="0.878652"/>
+<status status="PASS" start="2025-12-03T16:41:04.713782" elapsed="0.878234"/>
 </test>
-<status status="PASS" start="2025-12-02T16:46:44.474153" elapsed="4.579678"/>
+<status status="PASS" start="2025-12-03T16:41:01.126277" elapsed="4.465739"/>
 </suite>
 <suite id="s1-s2-s2-s4" name="Test Main Page" source="D:\PythonProjects\AQA\PlayWright\playwright-study\tests\ui\test_main_page.py">
 <test id="s1-s2-s2-s4-t1" name="test_add_first_item_to_cart[auth_state0-chromium]">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:49.070114" elapsed="0.158910"/>
+<status status="PASS" start="2025-12-03T16:41:05.592016" elapsed="0.143336"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
-<status status="PASS" start="2025-12-02T16:46:49.229024" elapsed="0.784235"/>
+<status status="PASS" start="2025-12-03T16:41:05.735352" elapsed="0.952482"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2025-12-02T16:46:50.013259" elapsed="0.059057"/>
+<status status="PASS" start="2025-12-03T16:41:06.687834" elapsed="0.008553"/>
 </kw>
 <tag>allure_label</tag>
-<status status="PASS" start="2025-12-02T16:46:49.053831" elapsed="1.018485"/>
+<status status="PASS" start="2025-12-03T16:41:05.592016" elapsed="1.104371"/>
 </test>
 <test id="s1-s2-s2-s4-t2" name="test_remove_item_from_main_page[auth_state0-chromium]">
 <kw name="Setup" owner="pytest_robotframework._internal.robot.library" type="SETUP">
-<status status="PASS" start="2025-12-02T16:46:50.072316" elapsed="1.063705"/>
+<status status="PASS" start="2025-12-03T16:41:06.696387" elapsed="1.100987"/>
 </kw>
 <kw name="Run Test" owner="pytest_robotframework._internal.robot.library">
-<status status="PASS" start="2025-12-02T16:46:51.136021" elapsed="0.283033"/>
+<status status="PASS" start="2025-12-03T16:41:07.797374" elapsed="0.276554"/>
 </kw>
 <kw name="Teardown" owner="pytest_robotframework._internal.robot.library" type="TEARDOWN">
-<status status="PASS" start="2025-12-02T16:46:51.419054" elapsed="0.084036"/>
+<status status="PASS" start="2025-12-03T16:41:08.073928" elapsed="0.086526"/>
 </kw>
 <tag>allure_label</tag>
-<status status="PASS" start="2025-12-02T16:46:50.072316" elapsed="1.430774"/>
+<status status="PASS" start="2025-12-03T16:41:06.696387" elapsed="1.464067"/>
 </test>
-<status status="PASS" start="2025-12-02T16:46:49.053831" elapsed="2.464898"/>
+<status status="PASS" start="2025-12-03T16:41:05.592016" elapsed="2.568438"/>
 </suite>
-<status status="PASS" start="2025-12-02T16:46:37.470967" elapsed="14.047762"/>
+<status status="PASS" start="2025-12-03T16:40:54.384121" elapsed="13.776333"/>
 </suite>
-<status status="PASS" start="2025-12-02T16:46:14.507765" elapsed="37.010964"/>
+<status status="PASS" start="2025-12-03T16:40:32.998259" elapsed="35.162195"/>
 </suite>
-<status status="FAIL" start="2025-12-02T16:46:13.322135" elapsed="38.196594"/>
+<status status="PASS" start="2025-12-03T16:40:32.866663" elapsed="35.293791"/>
 </suite>
 <statistics>
 <total>
-<stat pass="21" fail="1" skip="0">All Tests</stat>
+<stat pass="22" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="12" fail="0" skip="0">allure_label</stat>
@@ -586,11 +623,11 @@ No keyword with name 'test_valid_user_login' found.</status>
 <stat pass="1" fail="0" skip="0">smoke</stat>
 </tag>
 <suite>
-<stat name="Playwright-Study" id="s1" pass="21" fail="1" skip="0">Playwright-Study</stat>
-<stat name="Robot-Framework" id="s1-s1" pass="9" fail="1" skip="0">Playwright-Study.Robot-Framework</stat>
+<stat name="Playwright-Study" id="s1" pass="22" fail="0" skip="0">Playwright-Study</stat>
+<stat name="Robot-Framework" id="s1-s1" pass="10" fail="0" skip="0">Playwright-Study.Robot-Framework</stat>
 <stat name="TestExample" id="s1-s1-s1" pass="9" fail="0" skip="0">Playwright-Study.Robot-Framework.TestExample</stat>
-<stat name="Tests" id="s1-s1-s2" pass="0" fail="1" skip="0">Playwright-Study.Robot-Framework.Tests</stat>
-<stat name="Login Tests" id="s1-s1-s2-s1" pass="0" fail="1" skip="0">Playwright-Study.Robot-Framework.Tests.Login Tests</stat>
+<stat name="Tests" id="s1-s1-s2" pass="1" fail="0" skip="0">Playwright-Study.Robot-Framework.Tests</stat>
+<stat name="Login Tests" id="s1-s1-s2-s1" pass="1" fail="0" skip="0">Playwright-Study.Robot-Framework.Tests.Login Tests</stat>
 <stat name="Tests" id="s1-s2" pass="12" fail="0" skip="0">Playwright-Study.Tests</stat>
 <stat name="E2E" id="s1-s2-s1" pass="1" fail="0" skip="0">Playwright-Study.Tests.E2E</stat>
 <stat name="Test Successful Purchase" id="s1-s2-s1-s1" pass="1" fail="0" skip="0">Playwright-Study.Tests.E2E.Test Successful Purchase</stat>

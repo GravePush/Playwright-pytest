@@ -6,7 +6,6 @@ from pages.main_page import MainPage
 from pytest_robotframework import keyword
 
 
-@keyword
 @allure.feature("Valid Login")
 @allure.title("User can login")
 @allure.severity(severity_level=allure.severity_level.CRITICAL)
