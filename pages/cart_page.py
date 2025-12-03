@@ -35,5 +35,5 @@ class CartPage(BasePage):
     def remove_item_from_cart_page(self, item_name: str):
         with allure.step("Remove item from cart"):
             expect(self.page.locator(CartPageLocators.ITEM_NAME)).to_have_text(item_name)
-            self.page.get_by_role("button", name=CartPageLocators.REMOVE_BUTTON).click()
+            self.page.get_by_role("buttond", name=CartPageLocators.REMOVE_BUTTON).click()
             expect(self.page.locator(HeaderLocators.CART_BADGE)).not_to_be_visible()
