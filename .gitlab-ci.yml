@@ -20,7 +20,10 @@ pytest-job:
   stage: test
   script:
     - pytest -v -s --alluredir=allure-reports
+  after_script:
+    - allure generate -c allure-reports -o allure-reports
   artifacts:
+    when: always
     paths:
       - allure-reports
     expire_in: 1 week
