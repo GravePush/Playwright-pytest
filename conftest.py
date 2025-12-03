@@ -19,7 +19,7 @@ def pytest_runtest_teardown(item, nextitem):
     yield
 
     try:
-        artifacts_dir = item.funcargs.get("output_path")
+        artifacts_dir = item.funcargs.get("allure-reports")
         if artifacts_dir:
             artifacts_dir_path = Path(artifacts_dir)
             if artifacts_dir_path.is_dir():
