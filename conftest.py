@@ -14,21 +14,37 @@ SCREENSHOT_NAME_PATTERN = re.compile(r"^test-failed-\d+\.png$")
 VIDEO_PATTERN = re.compile(r".*\.(webm|mp4)$")
 
 
+# @pytest.hookimpl(hookwrapper=True)
+# def pytest_runtest_teardown(item, nextitem):
+#     yield
+#
+#     try:
+#         artifacts_dir = item.funcargs.get("allure-results")
+#         if artifacts_dir:
+#             artifacts_dir_path = Path(artifacts_dir)
+#             if artifacts_dir_path.is_dir():
+#                 for file in artifacts_dir_path.iterdir():
+#                     if file.is_file() and SCREENSHOT_NAME_PATTERN.match(file.name):
+#                         allure.attach.file(
+#                             str(file),
+#                             name=file.name,
+#                             attachment_type=allure.attachment_type.PNG,
+#                         )
 @pytest.hookimpl(hookwrapper=True)
-def pytest_runtest_teardown(item, nextitem):
-    yield
-
+def pytest_runtest_makereport(item, call):
+    # выполняем тест
+    outcome = yield
+    report = outcome.get_result()
     try:
-        artifacts_dir = item.funcargs.get("allure-results")
-        if artifacts_dir:
-            artifacts_dir_path = Path(artifacts_dir)
-            if artifacts_dir_path.is_dir():
-                for file in artifacts_dir_path.iterdir():
+        if report.failed:
+            screenshots_dir = Path("allure-results")
+            if screenshots_dir.exists():
+                for file in screenshots_dir.glob("*.png"):
                     if file.is_file() and SCREENSHOT_NAME_PATTERN.match(file.name):
                         allure.attach.file(
                             str(file),
                             name=file.name,
-                            attachment_type=allure.attachment_type.PNG,
+                            attachment_type=allure.attachment_type.PNG
                         )
                     elif VIDEO_PATTERN.match(file.name):
                         allure.attach.file(
