@@ -25,5 +25,5 @@ pytest-job:
   artifacts:
     when: always
     paths:
-      - allure-results
+      - allure-reports
     expire_in: 1 week
