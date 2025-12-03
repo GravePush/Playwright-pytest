@@ -19,5 +19,4 @@ build-job:
 pytest-job:
   stage: test
   script:
-    - python -m pip show playwright
-    - python -m playwright --version
+    - pytest tests/ui/test_cart_page.py -v -s
