@@ -19,4 +19,4 @@ build-job:
 pytest-job:
   stage: test
   script:
-    - pytest tests/ui/test_cart_page.py -v -s
+    - pytest -v -s
