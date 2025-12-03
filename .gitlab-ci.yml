@@ -21,7 +21,7 @@ pytest-job:
   script:
     - pytest -v -s --alluredir=allure-results
   after_script:
-    - allure generate -c allure-results -o allure-results
+    - allure generate -c allure-results -o allure-reports
   artifacts:
     when: always
     paths:
