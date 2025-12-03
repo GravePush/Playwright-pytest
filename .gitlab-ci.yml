@@ -5,6 +5,4 @@ default:
 build-job:
   stage: build
   script:
-    - winget install 9NQ7512CXL7T
-    - python --version
-    - pip --version
+    - winget show
