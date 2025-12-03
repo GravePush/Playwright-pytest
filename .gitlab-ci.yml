@@ -19,4 +19,4 @@ build-job:
 pytest-job:
   stage: test
   script:
-    - pytest -v -s
+    - pytest -v -s --alluredir=allure-reports
