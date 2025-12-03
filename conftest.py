@@ -53,6 +53,7 @@ def login(page, request):
     yield page
 
 
+
 @pytest.fixture(scope="session", params=[(VALID_USERNAME, VALID_PASSWORD)])
 def auth_state(browser, request):
     context = browser.new_context()
