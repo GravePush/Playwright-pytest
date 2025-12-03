@@ -1,4 +1,6 @@
-
+default:
+  tags:
+    - shellrunner
 
 build-job:
   stage: build
