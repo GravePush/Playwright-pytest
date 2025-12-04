@@ -217,6 +217,7 @@ __marimo__/
 
 
 # My ignores
+.idea
 auth.json
 allure-reports
 log.html
