@@ -219,3 +219,6 @@ __marimo__/
 # My ignores
 auth.json
 allure-reports
+log.html
+report.html
+output.xml
