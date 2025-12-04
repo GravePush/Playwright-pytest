@@ -14,47 +14,24 @@ SCREENSHOT_NAME_PATTERN = re.compile(r"^test-failed-\d+\.png$")
 VIDEO_PATTERN = re.compile(r".*\.(webm|mp4)$")
 
 
-# @pytest.hookimpl(hookwrapper=True)
-# def pytest_runtest_teardown(item, nextitem):
-#     yield
-#
-#     try:
-#         artifacts_dir = item.funcargs.get("allure-results")
-#         if artifacts_dir:
-#             artifacts_dir_path = Path(artifacts_dir)
-#             if artifacts_dir_path.is_dir():
-#                 for file in artifacts_dir_path.iterdir():
-#                     if file.is_file() and SCREENSHOT_NAME_PATTERN.match(file.name):
-#                         allure.attach.file(
-#                             str(file),
-#                             name=file.name,
-#                             attachment_type=allure.attachment_type.PNG,
-#                         )
 @pytest.hookimpl(hookwrapper=True)
-def pytest_runtest_makereport(item, call):
-    # выполняем тест
-    outcome = yield
-    report = outcome.get_result()
+def pytest_runtest_teardown(item, nextitem):
+    yield
+
     try:
-        if report.failed:
-            screenshots_dir = Path("allure-results")
-            if screenshots_dir.exists():
-                for file in screenshots_dir.glob("*.png"):
+        artifacts_dir = item.funcargs.get("output_path")
+        if artifacts_dir:
+            artifacts_dir_path = Path(artifacts_dir)
+            if artifacts_dir_path.is_dir():
+                for file in artifacts_dir_path.iterdir():
                     if file.is_file() and SCREENSHOT_NAME_PATTERN.match(file.name):
                         allure.attach.file(
                             str(file),
                             name=file.name,
-                            attachment_type=allure.attachment_type.PNG
+                            attachment_type=allure.attachment_type.PNG,
                         )
-                    elif VIDEO_PATTERN.match(file.name):
-                        allure.attach.file(
-                            str(file),
-                            name="Video on failure",
-                            attachment_type=allure.attachment_type.WEBM,
-                        )
-
     except Exception as e:
-        print(f"Error taking screenshot: {e}")
+        print(f"Error taking screenthot: {e}")
 
 
 @pytest.fixture(scope="function")
@@ -67,7 +44,6 @@ def login(page, request):
     with allure.step("Enter valid username and password"):
         login_page.login(username, password)
     yield page
-
 
 
 @pytest.fixture(scope="session", params=[(VALID_USERNAME, VALID_PASSWORD)])

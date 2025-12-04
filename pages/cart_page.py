@@ -12,7 +12,7 @@ class CartPage(BasePage):
 
     def check_page(self):
         super().check_page()
-        self.check_second_header_title_on_page(text="Your Cart", locator=HeaderLocators.SECOND_HEADER_TITLE)
+        self.check_second_header_title_on_page(text="Your Carfefeft", locator=HeaderLocators.SECOND_HEADER_TITLE)
 
     def return_to_main_page(self):
         with allure.step("Return to main page"):
@@ -35,5 +35,5 @@ class CartPage(BasePage):
     def remove_item_from_cart_page(self, item_name: str):
         with allure.step("Remove item from cart"):
             expect(self.page.locator(CartPageLocators.ITEM_NAME)).to_have_text(item_name)
-            self.page.get_by_role("buttond", name=CartPageLocators.REMOVE_BUTTON).click()
+            self.page.get_by_role("button", name=CartPageLocators.REMOVE_BUTTON).click()
             expect(self.page.locator(HeaderLocators.CART_BADGE)).not_to_be_visible()

@@ -3,6 +3,10 @@ import allure
 from pages.cart_page import CartPage
 
 
+def test_fail(page):
+    page.goto("https://www.saucedemo.com")
+    assert 1 == 1
+
 @allure.feature("Remove item from cart")
 @allure.title("Logged user with item in cart can remove this item from cart")
 @allure.severity(severity_level=allure.severity_level.CRITICAL)

@@ -9,6 +9,7 @@ class BasePage:
     def __init__(self, page: Page):
         self.page = page
 
+
     def open(self):
         with allure.step(f"Open {self.page_name} page"):
             self.page.goto(self.url)
