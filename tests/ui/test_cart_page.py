@@ -1,11 +1,13 @@
 import allure
 
 from pages.cart_page import CartPage
+from pages.main_page import MainPage
 
 
 def test_fail(page):
     page.goto("https://www.saucedemo.com")
-    assert 1 == 1
+    assert 1 == 2
+
 
 @allure.feature("Remove item from cart")
 @allure.title("Logged user with item in cart can remove this item from cart")
@@ -13,9 +15,11 @@ def test_fail(page):
 def test_remove_item_from_cart(user_with_item_in_cart):
     page = user_with_item_in_cart["page"]
     item_name = user_with_item_in_cart["item_name"]
-
     cart_page = CartPage(page)
-    cart_page.open()
-    cart_page.check_page()
+    main_page = MainPage(page)
+    main_page.click_on_cart()
     cart_page.remove_item_from_cart_page(item_name=item_name)
+
     cart_page.check_current_item_not_in_cart(item_name=item_name)
+    cart_page.page.wait_for_timeout(3000)
+

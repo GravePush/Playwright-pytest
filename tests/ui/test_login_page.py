@@ -1,6 +1,7 @@
 import allure
 import pytest
 
+from pages.cart_page import CartPage
 from pages.login_page import LoginPage
 from pages.main_page import MainPage
 from pytest_robotframework import keyword
@@ -18,6 +19,7 @@ from pytest_robotframework import keyword
 def test_valid_user_login(login):
     main_page = MainPage(login)
     main_page.check_page()
+
 
 
 @allure.feature("Invalid Login")

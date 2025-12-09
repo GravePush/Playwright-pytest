@@ -12,7 +12,7 @@ class CartPage(BasePage):
 
     def check_page(self):
         super().check_page()
-        self.check_second_header_title_on_page(text="Your Carfefeft", locator=HeaderLocators.SECOND_HEADER_TITLE)
+        self.check_second_header_title_on_page(text="Your Cart", locator=HeaderLocators.SECOND_HEADER_TITLE)
 
     def return_to_main_page(self):
         with allure.step("Return to main page"):
