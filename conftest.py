@@ -6,6 +6,7 @@ import allure
 import pytest
 from playwright.sync_api import Page
 
+from clients.user_client import UserClient
 from config import VALID_USERNAME, VALID_PASSWORD
 from pages.cart_page import CartPage
 
@@ -14,6 +15,8 @@ from pages.main_page import MainPage
 
 SCREENSHOT_NAME_PATTERN = re.compile(r"^test-failed-\d+\.png$")
 VIDEO_PATTERN = re.compile(r".*\.(webm|mp4)$")
+
+BASE_URL = "https://jsonplaceholder.typicode.com"
 
 
 @pytest.hookimpl(hookwrapper=True)
@@ -102,3 +105,8 @@ def user_with_item_in_cart(logged_user):
         "page": logged_user,
         "item_name": item_name
     }
+
+
+@pytest.fixture
+def user_client():
+    return UserClient(base_url=BASE_URL)
